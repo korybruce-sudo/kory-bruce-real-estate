@@ -671,13 +671,3 @@ h3 {
 .result-breakdown .refund-row strong {
   color: var(--gold);
 }
-/* Color contrast accessibility hotfix */
-body {
-  color: #575249 !important;
-}
-.hero-content p, .faq-answer, .brand small {
-  color: #575249 !important;
-}
-.eyebrow, .faq-question span {
-  color: #a18a4d !important;
-}
