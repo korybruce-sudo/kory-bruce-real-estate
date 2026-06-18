@@ -6,6 +6,7 @@
   --white: #ffffff;
   --muted: #6f6a60;
   --border: rgba(31, 31, 31, 0.14);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
 }
 
 * {
@@ -269,6 +270,7 @@ h3 {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 30px;
+  margin-bottom: 32px;
 }
 
 .area-list span,
