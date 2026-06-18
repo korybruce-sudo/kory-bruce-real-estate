@@ -241,7 +241,7 @@ h3 {
 }
 
 .muted {
-  background: rgba(31, 31, 31, 0.04); /* Changed from gold tint to a soft charcoal tint. Charcoal text on a light gray tint passes with a perfect score! */
+  background: rgba(31, 31, 31, 0.04);
   max-width: none;
   padding-left: max(4vw, calc((100vw - 1200px) / 2 + 4vw));
   padding-right: max(4vw, calc((100vw - 1200px) / 2 + 4vw));
