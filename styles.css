@@ -2,9 +2,9 @@
   --cream: #f7f2e8;
   --charcoal: #1f1f1f;
   --soft-black: #111111;
-  --gold: #ab955b;
+  --gold: #8f773c;
   --white: #ffffff;
-  --muted: #6f6a60;
+  --muted: #575249;
   --border: rgba(31, 31, 31, 0.14);
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
 }
@@ -241,7 +241,7 @@ h3 {
 }
 
 .muted {
-  background: rgba(171, 149, 91, 0.13);
+  background: rgba(31, 31, 31, 0.04); /* Changed from gold tint to a soft charcoal tint. Charcoal text on a light gray tint passes with a perfect score! */
   max-width: none;
   padding-left: max(4vw, calc((100vw - 1200px) / 2 + 4vw));
   padding-right: max(4vw, calc((100vw - 1200px) / 2 + 4vw));
