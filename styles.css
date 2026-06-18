@@ -680,3 +680,26 @@ h3 {
 .result-breakdown .refund-row strong {
   color: var(--gold-light);
 }
+.estimator-card input::placeholder {
+  color: #524e46 !important;
+  opacity: 1 !important;
+}
+
+.faq-question span {
+  color: #7a632d !important;
+}
+
+.section a, 
+.estimator-intro a,
+.hero-content a {
+  color: #7a632d !important;
+  text-decoration: underline;
+}
+
+p, .result-subtext, .fine-print {
+  color: #1f1f1f !important;
+}
+
+.estimator-card label span {
+  color: #111111 !important;
+}
