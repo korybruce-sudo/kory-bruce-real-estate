@@ -671,3 +671,27 @@ h3 {
 .result-breakdown .refund-row strong {
   color: var(--gold);
 }
+.eyebrow {
+  color: #7a632d !important; 
+}
+
+.brand-mark,
+.contact .eyebrow {
+  color: #e5d5b0 !important; 
+}
+
+.section.muted, 
+.section.muted p, 
+.faq-answer {
+  color: #3a3732 !important;
+}
+
+.muted {
+  background: rgba(31, 31, 31, 0.04) !important;
+}
+
+.contact .button.primary {
+  background: #d4be85 !important;
+  border-color: #d4be85 !important;
+  color: #111111 !important; 
+}
