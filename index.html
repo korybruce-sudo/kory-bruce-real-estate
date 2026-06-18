@@ -195,6 +195,188 @@
             </div>
         </section>
 
+        <section id="mortgage-calculator" class="section mortgage-section">
+            <div class="estimator-intro">
+                <p class="eyebrow">Mortgage Payment Estimator</p>
+                <h2>Get a quick estimate before you start shopping.</h2>
+                <p>
+                    Use this simple tool to estimate what a monthly payment could look like based on price,
+                    down payment, rate, amortization, taxes, and monthly fees.
+                </p>
+            </div>
+
+            <div class="estimator-shell">
+                <form class="estimator-card" id="mortgageCalculator">
+                    <div class="calculator-grid">
+                        <label>
+                            <span>Home Price</span>
+                            <input type="number" id="homePrice" placeholder="500000" min="0" required>
+                        </label>
+
+                        <label>
+                            <span>Down Payment</span>
+                            <input type="number" id="downPayment" placeholder="50000" min="0" required>
+                        </label>
+
+                        <label>
+                            <span>Interest Rate (%)</span>
+                            <input type="number" id="interestRate" placeholder="4.50" min="0" step="0.01" required>
+                        </label>
+
+                        <label>
+                            <span>Amortization</span>
+                            <select id="amortization" required>
+                                <option value="25">25 years</option>
+                                <option value="30">30 years</option>
+                                <option value="20">20 years</option>
+                                <option value="15">15 years</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            <span>Estimated Annual Property Tax</span>
+                            <input type="number" id="propertyTax" placeholder="3500" min="0">
+                        </label>
+
+                        <label>
+                            <span>Monthly Condo / Other Fees</span>
+                            <input type="number" id="monthlyFees" placeholder="0" min="0">
+                        </label>
+                    </div>
+
+                    <button class="button primary calculator-button" type="submit">
+                        Calculate Estimate
+                    </button>
+
+                    <p class="fine-print estimator-note">
+                        Estimate only. Actual payments, qualification, mortgage insurance, taxes, rates,
+                        and closing costs may vary. Speak with a mortgage professional for personalized advice.
+                    </p>
+                </form>
+
+                <aside class="estimator-result-card" id="mortgageResult" aria-live="polite">
+                    <p class="result-label">Estimated Monthly Payment</p>
+                    <strong class="result-total">$0</strong>
+                    <p class="result-subtext">
+                        Enter your numbers to see a rough monthly estimate.
+                    </p>
+
+                    <div class="result-breakdown">
+                        <div>
+                            <span>Mortgage</span>
+                            <strong>$0</strong>
+                        </div>
+                        <div>
+                            <span>Property Tax</span>
+                            <strong>$0</strong>
+                        </div>
+                        <div>
+                            <span>Other Fees</span>
+                            <strong>$0</strong>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="cash-needed-estimator" class="section muted">
+            <div class="estimator-intro">
+                <p class="eyebrow">Cash Needed to Buy Estimator</p>
+                <h2>Estimate how much cash you may need to buy a home.</h2>
+                <p>
+                    Your down payment is only one part of buying a home. This tool gives you a rough estimate
+                    of the cash you may need for your down payment, Ontario land transfer tax, legal fees,
+                    inspection, appraisal, adjustments, and moving costs.
+                </p>
+            </div>
+
+            <div class="estimator-shell">
+                <form class="estimator-card" id="cashNeededCalculator">
+                    <div class="calculator-grid">
+                        <label>
+                            <span>Purchase Price</span>
+                            <input type="number" id="cashPurchasePrice" placeholder="500000" min="0" required>
+                        </label>
+
+                        <label>
+                            <span>Down Payment</span>
+                            <input type="number" id="cashDownPayment" placeholder="50000" min="0" required>
+                        </label>
+
+                        <label>
+                            <span>First-Time Buyer?</span>
+                            <select id="firstTimeBuyer" required>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            <span>Estimated Legal Fees</span>
+                            <input type="number" id="legalFees" placeholder="1800" min="0">
+                        </label>
+
+                        <label>
+                            <span>Home Inspection Estimate</span>
+                            <input type="number" id="inspectionFee" placeholder="500" min="0">
+                        </label>
+
+                        <label>
+                            <span>Appraisal Estimate</span>
+                            <input type="number" id="appraisalFee" placeholder="400" min="0">
+                        </label>
+
+                        <label>
+                            <span>Adjustments / Buffer</span>
+                            <input type="number" id="adjustmentBuffer" placeholder="1200" min="0">
+                        </label>
+
+                        <label>
+                            <span>Moving / Setup Costs</span>
+                            <input type="number" id="movingCosts" placeholder="1000" min="0">
+                        </label>
+                    </div>
+
+                    <button class="button primary calculator-button" type="submit">
+                        Calculate Cash Needed
+                    </button>
+
+                    <p class="fine-print estimator-note">
+                        Estimate only. Actual closing costs, land transfer tax, rebate eligibility, legal fees,
+                        lender costs, adjustments, insurance, moving costs, and taxes may vary. Speak with your
+                        lawyer, lender, or mortgage professional before relying on these numbers.
+                    </p>
+                </form>
+
+                <aside class="estimator-result-card cash-result-card" id="cashNeededResult" aria-live="polite">
+                    <p class="result-label">Estimated Cash Needed</p>
+                    <strong class="result-total">$0</strong>
+                    <p class="result-subtext">
+                        Enter your numbers to estimate the cash you may need to buy.
+                    </p>
+
+                    <div class="result-breakdown">
+                        <div>
+                            <span>Down Payment</span>
+                            <strong>$0</strong>
+                        </div>
+                        <div>
+                            <span>Land Transfer Tax</span>
+                            <strong>$0</strong>
+                        </div>
+                        <div>
+                            <span>First-Time Buyer Refund</span>
+                            <strong>$0</strong>
+                        </div>
+                        <div>
+                            <span>Other Closing Costs</span>
+                            <strong>$0</strong>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
         <section id="first-time-buyers" class="section">
             <p class="eyebrow">First-Time Home Buyers</p>
             <h2>First-time home buyer guidance in Windsor-Essex.</h2>
