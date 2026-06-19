@@ -690,10 +690,33 @@ h3 {
   color: #e5d5b0 !important; 
 }
 
-.section.muted, 
-.section.muted p, 
-.faq-answer {
-  color: #3a3732 !important;
+.section.muted {
+  color: #3a3732;
+}
+
+.section.muted > p,
+.section.muted .faq-answer {
+  color: #3a3732;
+}
+
+.estimator-result-card,
+.estimator-result-card p,
+.estimator-result-card span,
+.estimator-result-card strong {
+  color: var(--cream) !important;
+}
+
+.estimator-result-card .result-label {
+  color: #d4be85 !important;
+}
+
+.estimator-result-card .result-subtext,
+.estimator-result-card .result-breakdown span {
+  color: rgba(248, 244, 236, 0.78) !important;
+}
+
+.estimator-result-card .refund-row strong {
+  color: #d4be85 !important;
 }
 
 .muted {
